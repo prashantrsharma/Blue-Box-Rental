@@ -1,0 +1,96 @@
+﻿@model BlueBoxRental.Entities.Film
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Film</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FilmId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FilmId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseYear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseYear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LanguageId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LanguageId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OriginalLanguageId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OriginalLanguageId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalDuration)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RentalDuration)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalRate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RentalRate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Length)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Length)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReplacementCost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReplacementCost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SpecialFeatures)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SpecialFeatures)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdate)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

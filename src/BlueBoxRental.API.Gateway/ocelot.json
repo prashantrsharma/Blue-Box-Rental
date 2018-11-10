@@ -1,0 +1,29 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/film.blueboxrentalapis.com/ListFilms",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Film/"
+    },
+    {
+      "DownstreamPathTemplate": "/film.blueboxrentalapis.com/GetFilm/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Film/{id}"
+    }
+  ],
+  "GlobalConfiguration": {
+
+  }
+}

@@ -1,0 +1,16 @@
+﻿Verb		Noun	Method name	Request message		Response message
+List		Book	ListBooks	ListBooksRequest	ListBooksResponse
+Get			Book	GetBook		GetBookRequest		Book
+Create		Book	CreateBook	CreateBookRequest	Book
+Update		Book	UpdateBook	UpdateBookRequest	Book
+Rename		Book	RenameBook	RenameBookRequest	RenameBookResponse
+Delete		Book	DeleteBook	DeleteBookRequest	google.protobuf.Empty
+
+
+API Name			Example
+Product Name		Google Calendar API
+Service Name		calendar.googleapis.com
+Package Name		google.calendar.v3
+Interface Name		google.calendar.v3.CalendarService
+Source Directory	//google/calendar/v3
+API Name			calendar
