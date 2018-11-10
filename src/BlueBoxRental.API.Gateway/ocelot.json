@@ -43,6 +43,17 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Customer/{id}"
+    },
+    {
+      "DownstreamPathTemplate": "/staff.blueboxrentalapis.com/ListStaffs",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7073
+        }
+      ],
+      "UpstreamPathTemplate": "/api/staff/"
     }
   ],
   "GlobalConfiguration": {

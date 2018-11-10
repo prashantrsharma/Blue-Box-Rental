@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBoxRental.API.Gateway",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBoxRental.CustomerServices", "BlueBoxRental.CustomerServices\BlueBoxRental.CustomerServices.csproj", "{06F07E9B-66E6-4466-922C-0525BF994D65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBoxRental.StaffServices", "BlueBoxRental.StaffServices\BlueBoxRental.StaffServices.csproj", "{1FE7C98F-2542-4FC6-B675-24567D4E4B6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{06F07E9B-66E6-4466-922C-0525BF994D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06F07E9B-66E6-4466-922C-0525BF994D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06F07E9B-66E6-4466-922C-0525BF994D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE7C98F-2542-4FC6-B675-24567D4E4B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE7C98F-2542-4FC6-B675-24567D4E4B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE7C98F-2542-4FC6-B675-24567D4E4B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE7C98F-2542-4FC6-B675-24567D4E4B6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
