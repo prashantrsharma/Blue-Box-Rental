@@ -21,6 +21,28 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Film/{id}"
+    },
+    {
+      "DownstreamPathTemplate": "/customer.blueboxrentalapis.com/ListCustomers",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Customer/"
+    },
+    {
+      "DownstreamPathTemplate": "/customer.blueboxrentalapis.com/GetCustomer/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Customer/{id}"
     }
   ],
   "GlobalConfiguration": {
