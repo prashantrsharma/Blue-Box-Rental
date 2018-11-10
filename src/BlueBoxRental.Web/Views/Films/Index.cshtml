@@ -4,11 +4,8 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2> Movies You Can Rent !</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -26,9 +23,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.LanguageId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.OriginalLanguageId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.RentalDuration)
@@ -73,9 +67,6 @@
                 @Html.DisplayFor(modelItem => item.LanguageId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.OriginalLanguageId)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.RentalDuration)
             </td>
             <td>
@@ -97,9 +88,7 @@
                 @Html.DisplayFor(modelItem => item.LastUpdate)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Details", "Details", new {  id=item.FilmId  }) 
             </td>
         </tr>
 }
