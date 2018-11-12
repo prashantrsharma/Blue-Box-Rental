@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlueBoxRental.Entities", "B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlueBoxRental.FilmServices", "BlueBoxRental.FilmServices\BlueBoxRental.FilmServices.csproj", "{222E83EF-8A67-4269-9CE0-E24E39AB952C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBoxRental.API.Gateway", "BlueBoxRental.API.Gateway\BlueBoxRental.API.Gateway.csproj", "{3361AD75-BF5F-4C86-AD94-0610E8F539C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlueBoxRental.API.Gateway", "BlueBoxRental.API.Gateway\BlueBoxRental.API.Gateway.csproj", "{3361AD75-BF5F-4C86-AD94-0610E8F539C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBoxRental.CustomerServices", "BlueBoxRental.CustomerServices\BlueBoxRental.CustomerServices.csproj", "{06F07E9B-66E6-4466-922C-0525BF994D65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlueBoxRental.CustomerServices", "BlueBoxRental.CustomerServices\BlueBoxRental.CustomerServices.csproj", "{06F07E9B-66E6-4466-922C-0525BF994D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBoxRental.StaffServices", "BlueBoxRental.StaffServices\BlueBoxRental.StaffServices.csproj", "{1FE7C98F-2542-4FC6-B675-24567D4E4B6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlueBoxRental.StaffServices", "BlueBoxRental.StaffServices\BlueBoxRental.StaffServices.csproj", "{1FE7C98F-2542-4FC6-B675-24567D4E4B6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBoxRental.RentalServices", "BlueBoxRental.RentalServices\BlueBoxRental.RentalServices.csproj", "{A90772A4-BD20-4632-BEB6-830D7F536EA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{1FE7C98F-2542-4FC6-B675-24567D4E4B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FE7C98F-2542-4FC6-B675-24567D4E4B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FE7C98F-2542-4FC6-B675-24567D4E4B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90772A4-BD20-4632-BEB6-830D7F536EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90772A4-BD20-4632-BEB6-830D7F536EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90772A4-BD20-4632-BEB6-830D7F536EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90772A4-BD20-4632-BEB6-830D7F536EA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

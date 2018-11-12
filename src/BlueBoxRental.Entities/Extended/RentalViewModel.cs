@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace BlueBoxRental.Entities
+namespace BlueBoxRental.Entities.Extended
 {
-    public partial class Rental
+    public class RentalViewModel
     {
-        public Rental()
+        public RentalViewModel()
         {
             Payment = new HashSet<Payment>();
         }
@@ -20,6 +21,10 @@ namespace BlueBoxRental.Entities
         public Customer Customer { get; set; }
         public Inventory Inventory { get; set; }
         public Staff Staff { get; set; }
+        public int FilmId { get; set; }
         public ICollection<Payment> Payment { get; set; }
+        public IList<Staff> ListStaffs { get; set; }
+        public IList<Customer> ListCustomers { get; set; }
+        public IList<Film> ListFilms { get; set; }
     }
 }

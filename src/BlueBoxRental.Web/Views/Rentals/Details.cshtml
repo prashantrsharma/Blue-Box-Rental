@@ -1,0 +1,59 @@
+﻿@model BlueBoxRental.Entities.Rental
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rental</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RentalId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RentalDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InventoryId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InventoryId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReturnDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReturnDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StaffId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StaffId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

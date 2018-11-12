@@ -9,7 +9,8 @@
           "Port": 7071
         }
       ],
-      "UpstreamPathTemplate": "/api/Film/"
+      "UpstreamPathTemplate": "/api/Film/",
+      "Key": "ListFilms"
     },
     {
       "DownstreamPathTemplate": "/film.blueboxrentalapis.com/GetFilm/{id}",
@@ -31,7 +32,8 @@
           "Port": 7072
         }
       ],
-      "UpstreamPathTemplate": "/api/Customer/"
+      "UpstreamPathTemplate": "/api/Customer/",
+      "Key": "ListCustomers"
     },
     {
       "DownstreamPathTemplate": "/customer.blueboxrentalapis.com/GetCustomer/{id}",
@@ -53,7 +55,40 @@
           "Port": 7073
         }
       ],
-      "UpstreamPathTemplate": "/api/staff/"
+      "UpstreamPathTemplate": "/api/Staff/",
+      "Key": "ListStaffs"
+    },
+    {
+      "DownstreamPathTemplate": "/rental.blueboxrentalapis.com/ListRentals",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7074
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Rental/"
+    },
+    {
+      "DownstreamPathTemplate": "/rental.blueboxrentalapis.com/GetRental/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7074
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Rental/{id}"
+    }
+  ],
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "ListFilms",
+        "ListCustomers",
+        "ListStaffs"
+      ],
+      "UpstreamPathTemplate": "/api/Rental/New/"
     }
   ],
   "GlobalConfiguration": {

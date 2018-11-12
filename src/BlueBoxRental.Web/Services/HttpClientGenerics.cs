@@ -14,6 +14,15 @@ namespace BlueBoxRental.Web.Services
 {
     public static class HttpClientGenerics
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="apiUrl"></param>
+        /// <param name="apiRoute"></param>
+        /// <param name="argRoute"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
         public static async Task<T> Get<T>(string apiUrl, string apiRoute, string argRoute, CancellationToken cancellationToken = default(CancellationToken)) where T : new()
         {
             using (HttpClient client = new HttpClient(new HttpClientHandler() { CookieContainer = new CookieContainer() }, false))
@@ -29,6 +38,37 @@ namespace BlueBoxRental.Web.Services
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="apiUrl"></param>
+        /// <param name="argRoute"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        public static async Task<T> Get<T>(string apiUrl,string argRoute, CancellationToken cancellationToken = default(CancellationToken)) where T : new()
+        {
+            using (HttpClient client = new HttpClient(new HttpClientHandler() { CookieContainer = new CookieContainer() }, false))
+            {
+                client.BaseAddress = new System.Uri(apiUrl);
+                HttpResponseMessage response = await client.GetAsync(argRoute, cancellationToken);
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadAsAsync<T>(cancellationToken);
+                }
+                string error = await response.Content.ReadAsStringAsync();
+                throw new WebException(error);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="apiUrl"></param>
+        /// <param name="apiRoute"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
         public static async Task<List<T>> GetList<T>(string apiUrl,string apiRoute, CancellationToken cancellationToken = default(CancellationToken)) where T : new()
         {
             using (HttpClient client = new HttpClient(new HttpClientHandler() {CookieContainer = new CookieContainer()}, false))
